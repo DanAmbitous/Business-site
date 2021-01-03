@@ -65,3 +65,11 @@ li {
 #content {
     margin-left:300px;
 }
+
+.image {
+    cursor:pointer;
+}
+
+.image:active {
+    width:200px;
+}
