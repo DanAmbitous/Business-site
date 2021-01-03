@@ -1,10 +1,15 @@
+:root {
+    --gray: gray;
+    --lightergray: darkgray;
+}
+
 body {
     margin:0;
     padding:0;
 }
 
 #top-navigation {
-    background-color: rgb(167, 167, 167);
+    background-color: var(--lightergray);
     overflow: hidden;
     display: flex;
 }
@@ -15,11 +20,11 @@ body {
 }
 
 #top-navigation li:hover {
-    background-color:gray;
+    background-color:var(--gray);
 }
 
 #top-navigation li:active {
-    background-color:darkgray;
+    background-color:var(--lightergray);
     cursor:pointer;
 }
 
@@ -32,11 +37,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color:darkgray;
+    background-color:var(--lightergray);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color:gray;
+    background-color:var(--gray);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -52,7 +57,7 @@ ul {
 li {
    display: block;
    padding: 8px;
-   background-color: darkgray;
+   background-color: var(--lightergray);
    cursor:pointer;
    font-size:16px;
 }
