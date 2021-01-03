@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="eCommerWebsite.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="eCommerWebsite.js"></script>
     <link rel="stylesheet" href="eCommerWebsite.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fe793112da.js" crossorigin="anonymous"></script>
@@ -12,18 +12,63 @@
 </head>
 <body>
     <ul id="top-navigation">
-        <li><i class="fas fa-shopping-cart"></i> Shops</li>
-        <li><i class="fas fa-cog"></i> Settings</li>
-        <li><i class="fas fa-info-circle"></i> Information</li>
-        <li><i class="fas fa-headset"></i> Help</li>
-        <li><i class="fas fa-user-circle"></i> Account</li>
+        <li id="shops"><i class="fas fa-shopping-cart"></i> Shops</li>
+        <li id="settings"><i class="fas fa-cog"></i> Settings</li>
+        <li id="information"><i class="fas fa-info-circle"></i> Information</li>
+        <li id="help"><i class="fas fa-headset"></i> Help</li>
+        <li id="account"><i class="fas fa-user-circle"></i> Account</li>
     </ul>
     <ul id="left-navigation">
-        <li><i class="fas fa-shopping-cart"></i> Shops</li>
-        <li><i class="fas fa-cog"></i> Settings</li>
-        <li><i class="fas fa-info-circle"></i> Information</li>
-        <li><i class="fas fa-headset"></i> Help</li>
-        <li><i class="fas fa-user-circle"></i> Account</li>
+        <li>Category
+            <ul>
+                <li><input type="checkbox" name="category"> Electronics</li>
+                <li><input type="checkbox" name="category"> Clothes</li>
+                <li><input type="checkbox" name="category"> Toys</li>
+                <li><input type="checkbox" name="category"> Programs</li>
+                <li><input type="checkbox" name="category"> Accesories</li>
+            </ul>
+        </li>
+        <li>Product color
+            <ul>
+                <li><input type="checkbox" name="category">blue</li>
+                <li><input type="checkbox" name="category">red</li>
+                <li><input type="checkbox" name="category">black</li>
+                <li><input type="checkbox" name="category">white</li>
+                <li><input type="checkbox" name="category">green</li>
+            </ul>
+        </li>
+        <li>Material
+            <ul>
+                <li><input type="checkbox" name="category">Cotton</li>
+                <li><input type="checkbox" name="category">Textile</li>
+                <li><input type="checkbox" name="category">Fiber</li>
+                <li><input type="checkbox" name="category">Denim</li>
+                <li><input type="checkbox" name="category">Synthetic fiber</li>
+            </ul>
+        </li>
+        <li>Brand
+            <ul>
+                <li><input type="checkbox" name="category">Nike</li>
+                <li><input type="checkbox" name="category">Hermes</li>
+                <li><input type="checkbox" name="category">Cartier</li>
+            </ul>
+        </li>
+        <li>Price Range
+            <div id="slide-container">
+                <input type="range" min="0" max="100" class="slider">
+            </div>
+        </li>
     </ul>
+
+    <div id="content">
+
+    <!--Shops-->
+    
+    <h1>Shops</h1>
+
+    <!--Settings-->
+
+    <h1 id="settings">Settings</h1>
+    </div>
 </body>
 </html>
